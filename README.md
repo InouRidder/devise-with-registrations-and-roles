@@ -1,1 +1,3 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+### Devise with registrations and roles
+
+Simple app to see how devise can be integrated with registrations and different 'user' models.
