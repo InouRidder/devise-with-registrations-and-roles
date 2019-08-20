@@ -1,2 +1,8 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= link_to 'Register as a Driver', new_registration_registration_path(user_type: 'Driver') %>
+<%= link_to 'Register as a Client', new_registration_registration_path(user_type: 'Client') %>
+
+<% if user_signed_in? %>
+  <h1>
+    You are a <%= current_user.class  %>
+  </h1>
+<% end %>

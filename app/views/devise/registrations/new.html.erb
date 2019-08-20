@@ -12,6 +12,9 @@
                 required: true,
                 hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                 input_html: { autocomplete: "new-password" } %>
+    <input type="hidden" name='user_type' value="<%= params[:user_type] ? params[:user_type] : 'Client'%>">
+    <!-- Setting a default value above in case none was set -->
+
     <%= f.input :password_confirmation,
                 required: true,
                 input_html: { autocomplete: "new-password" } %>
